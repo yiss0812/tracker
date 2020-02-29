@@ -14,9 +14,14 @@ exercises: [
     reps: Number,
     sets: Number,
     distance: Number
-  }]
+  },
+{
+  toJSON: {
+    virtuals: true
+  }
+}]
 
 });
-    const workout = mongoose.model("workout", WorkoutSchema);
+    const Workout = mongoose.model("Workout", WorkoutSchema);
 
-module.exports = workout;
+module.exports = Workout;
